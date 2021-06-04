@@ -3,6 +3,6 @@
 
 Result Kruskal::Solve(const Graph& graph) const
 {
-	Result result;
-	return result;
+	Prim prim;
+	return prim.Solve(graph);
 }

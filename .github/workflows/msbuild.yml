@@ -16,7 +16,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
@@ -28,4 +28,5 @@ jobs:
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
 
     - name: Run Tests
-      run: ${{env.GITHUB_WORKSPACE}}\MedipolDataStructures\x64\Release\MinimumSpanningTree.Test.exe
+      working-directory: ${{ github.workspace }} 
+      run: x64\Release\MinimumSpanningTree.Test.exe

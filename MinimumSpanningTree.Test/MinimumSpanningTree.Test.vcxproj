@@ -146,9 +146,6 @@
     <ProjectReference Include="..\MinimumSpanningTree\MinimumSpanningTree.vcxproj">
       <Project>{abbd79c8-b72c-4cbd-a368-94e1f2e85f2b}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\Project1\Project1.vcxproj">
-      <Project>{abbd79c8-b72c-4cbd-a368-94e1f2e85f2b}</Project>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Catch.h" />
